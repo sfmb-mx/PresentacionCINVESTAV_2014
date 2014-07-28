@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.29)  28 JUL 2014 16:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.29)  28 JUL 2014 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1913,7 +1913,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  18532 strings out of 493308
  352388 string characters out of 6137816
- 467693 words of memory out of 5000000
+ 467752 words of memory out of 5000000
  21491 multiletter control sequences out of 15000+600000
  134746 words of font info for 117 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1937,7 +1937,7 @@ type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
 ype1/public/fbb/fbb-Bold.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
 blic/fbb/fbb-Italic.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
 fbb/fbb-Regular.pfb>
-Output written on tesisMaestriaSlides_SFMB.pdf (31 pages, 4258016 bytes).
+Output written on tesisMaestriaSlides_SFMB.pdf (31 pages, 4259438 bytes).
 PDF statistics:
  19079 PDF objects out of 22161 (max. 8388607)
  9616 compressed objects within 97 object streams

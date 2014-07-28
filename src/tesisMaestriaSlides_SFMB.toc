@@ -1,5 +1,5 @@
 \select@language {english}
-\contentsline {section}{Datos de la tesis}{4}
+\contentsline {section}{Datos de la Tesis de Maestr\IeC {\'\i }a}{4}
 \contentsline {subsection}{Estado del Arte (2000): Defectos en CI's}{5}
 \contentsline {subsection}{Pruebas de CI's}{6}
 \contentsline {subsection}{Modelos de fallas}{7}

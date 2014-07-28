@@ -1,0 +1,3 @@
+* New Ohms law
+** R = Ro (L + mfp)/ W
+**
