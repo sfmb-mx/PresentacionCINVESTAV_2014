@@ -1,0 +1,86 @@
+* Pruebas de CI's aplicando un pulso en las Fuentes de Polarización.
+** Portada
+   Por:
+   Sergio-Feliciano Mendoza-Barrera
+
+   Supervisada por:
+   Dr. Víctor Champac Vilela
+   Dr. Mónico Linares Aranda
+   2014
+** Contenido
+*** Estado del Arte (2000)
+**** Defectos en CI's
+***** Corto-circuitos entre conductores
+***** Roturas en los conductores
+***** Roturas en los contactos o vías
+***** Uniones P-N defectuosas
+**** Pruebas de CI's
+***** Esquema General de pruebas a CI's
+****** Aplicación de vectores de prueba
+****** La medición en un punto observable
+****** Comparación con respecto a la referencia
+***** Modelos de fallas
+****** Fallas tipo Stuck-at
+******* Un vector puede detectar mas de una falla
+******* Diferentes vectores detectan la misma falla
+****** Fallas Stuck-Open
+******* Prueba de doble patrón
+******* Propagación del error
+******* Generación automática de vectores de test
+****** Fallas Stuck-on
+******* Colocar ecuación voltaje de salida
+******* Algún transistor permanece encendido
+******* Selección adecuada de vectores de prueba
+****** Fallas de tipo puente o corto circuito
+******* Tipo no retroalimentante en un elemento
+******* Tipo no retroalimentante entre dos elementos
+******* Retroalimentante
+**** Prueba de iDDQ
+***** Descripción de la prueba
+****** Pulsos simultáneos en VDD y VSS
+****** Monitoreo de la corriente de iDD
+****** Mismos vectores de pruebas para cualquier falla
+****** Aplicación de un único vector de prueba
+***** Monitoreo de corriente
+***** Consumo de corriente mayor
+***** Usado en estructuras CMOS estáticas
+***** Corriente resultante de la prueba iDDQ
+*** Análisis de DC
+**** Modelo de primer orden
+**** Caso simétrico
+**** Caso asimétrico
+**** Análisis de Corriente
+*** Pruebas de iDDQ en un módulo combinacional
+**** Circuito bajo prueba
+***** Circuito Sumador completo optimizado
+**** Respuesta a la aplicación de vectores de prueba
+**** Elección de las fallas
+***** Lista de fallas
+**** Resultados
+***** Fallas entre VDD (VSS) y entradas
+****** Falla entre VDD y la entrada A
+******* Rutas balanceadas y desbalanceadas
+****** Desbalanceo de rutas a las entradas
+******* Técnica utilizada para rutas de difícil detección
+****** Fallas entre nodos internos
+****** Fallas entre VDD (VSS) y nodos internos
+******* Fallas de fácil detección
+****** Fallas entre VDD (VSS) y nodos internos
+******* Anomalías en algunas configuraciones
+****** Fallas entre las entradas y nodos internos
+******* Fallas de fácil detección
+***** Resumen de resultados
+****** Fallas fáciles de detectar
+******* Fallas entre VDD (VSS) y entradas
+******* Fallas entre nodos internos
+******* Fallas entre entradas y nodos internos
+******* La mayoría de las fallas entre VDD (VSS) y nodos internos
+****** Fallas de detección difícil
+******* Fallas entre entradas
+******* Fallas entre nodos en los cuales existan transistores en paralelo
+****** Al variar la pendiente, se mejora la facilidad de detección de fallas entre alimentaciones y nodos internos
+****** La zona estable del vector de prueba es importante para la detección.
+*** Conclusiones
+**** Se desarrolló un modelo de primer Se desarrolló un modelo de primer orden para predecir el comportamiento de las celdas CMOS estáticas en la aplicación de la prueba
+**** Se desarrolló una optimización de tiempos de aplicación del vector de prueba para máxima detección
+**** Se desarrolló una técnica que permite encontrar fallas de difícil detección
