@@ -1,10 +1,16 @@
 \select@language {english}
-\contentsline {section}{Datos de la tesis}{3}
-\contentsline {subsection}{Estado del Arte (2000): Defectos en CI's}{4}
-\contentsline {subsection}{Bullet Points and Numbered Lists}{5}
-\contentsline {subsection}{Verbatim}{6}
-\contentsline {section}{Displaying Information}{7}
-\contentsline {subsection}{Table}{8}
-\contentsline {subsection}{Figure}{9}
-\contentsline {subsection}{Theorem}{10}
-\contentsline {section}{Citations}{11}
+\contentsline {section}{Datos de la tesis}{4}
+\contentsline {subsection}{Estado del Arte (2000): Defectos en CI's}{5}
+\contentsline {subsection}{Pruebas de CI's}{6}
+\contentsline {subsection}{Modelos de fallas}{7}
+\contentsline {section}{Prueba de $i_{DDQ}$}{14}
+\contentsline {subsection}{Ventajas de la t\IeC {\'e}cnica de $i_{DDQ}$}{16}
+\contentsline {subsection}{Un \IeC {\'u}nico vector de prueba}{18}
+\contentsline {subsection}{Modelo de primer orden}{19}
+\contentsline {subsection}{Caso sim\IeC {\'e}trico: Modelo vs. Simulaci\IeC {\'o}n}{20}
+\contentsline {subsubsection}{Potenciales: Modelo y simulaci\IeC {\'o}n del caso asim\IeC {\'e}trico (a)}{21}
+\contentsline {subsubsection}{Potenciales: Modelo y simulaci\IeC {\'o}n del caso asim\IeC {\'e}trico (b)}{22}
+\contentsline {subsubsection}{An\IeC {\'a}lisis de Corriente (a) Cuasi-sim\IeC {\'e}trico (b) Asim\IeC {\'e}trico}{23}
+\contentsline {subsection}{$i_{DD}$ en un celda b\IeC {\'a}sica real}{25}
+\contentsline {subsubsection}{Resumen de fallas analizadas}{28}
+\contentsline {section}{Conclusiones}{29}

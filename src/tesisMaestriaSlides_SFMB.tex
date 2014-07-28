@@ -88,6 +88,7 @@ foot skip=8.5mm
 \usepackage{amsthm} % Required for theorem environments
 \usepackage{bm} % Required for bold math symbols (used in the footer of the slides)
 \usepackage{graphicx} % Required for including images in figures
+\graphicspath{{img/}} % Sets the default location of pictures
 \usepackage{tikz} % Required for colored boxes
 \usepackage{booktabs} % Required for horizontal rules in tables
 \usepackage{multicol} % Required for creating multiple columns in slides
@@ -201,12 +202,11 @@ shadow
 %----------------------------------------------------------------------------------------
 
 \newcommand*{\mytitle}{Trabajo de Maestría (Electrónica)} % Title
-\newcommand*{\runninghead}{Maestría en Ciencias con Especialidad en
-  Electrónica} % Running head displayed on
+\newcommand*{\runninghead}{CINVESTAV 2014} % Running head displayed on
                                 % almost all slides
 \newcommand*{\myauthor}{Sergio-Feliciano Mendoza-Barrera} % Presenters name(s)
 \newcommand*{\mydate}{Julio 29, 2014} % Presentation date
-\newcommand*{\myuni}{Global Labs Mexico} % University or department
+\newcommand*{\myuni}{smendoza.barrera@globallabs.org} % University or department
 
 %----------------------------------------------------------------------------------------
 
@@ -280,11 +280,11 @@ shadow
 \end{multicols}
 
 \begin{figure}[h]
-\centering\includegraphics[width=0.4\linewidth]{placeholder}
+\centering\includegraphics[width=0.23\linewidth]{defectos}
 \end{figure}
 
 
-% \textit{Sed iaculis} dapibus gravida. Morbi sed tortor erat, nec
+% \textit{Sed iaculis} dapibus gravida. Morbi sed tortero erat, nec
 % interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem
 % ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed
 % tellus ipsum.
@@ -303,117 +303,403 @@ shadow
 
 %------------------------------------------------
 
-\subsection{Bullet Points and Numbered Lists}
+\subsection{Pruebas de CI's}
 
-\begin{itemize}
-\item Lorem ipsum dolor sit amet, consectetur adipiscing elit
-\item Aliquam blandit faucibus nisi, sit amet dapibus enim tempus eu
-\end{itemize}
-
-\begin{enumerate}
-\item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
-\item Nam cursus est eget velit posuere pellentesque
-\item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
-\end{enumerate}
-
-\clearpage
-
-%------------------------------------------------
-
-\subsection{Verbatim}
-
-How to include a theorem in this presentation:
-\begin{verbatim}
-\mybox{0.8\textwidth}{
-\begin{theorem}[Murphy (1949)]
-Anything that can go wrong, will go wrong.
-\end{theorem}
-}
-\end{verbatim}
-
-\clearpage
-
-%------------------------------------------------
-
-
-\section{Displaying Information}
-
-\clearpage
-
-%------------------------------------------------
-
-\subsection{Table}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{l l l}
-\toprule
-\textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-\midrule
-Treatment 1 & 0.0003262 & 0.562 \\
-Treatment 2 & 0.0015681 & 0.910 \\
-Treatment 3 & 0.0009271 & 0.296 \\
-\bottomrule
-\end{tabular}
-\caption{Table caption}
-\end{table}
-
-\clearpage
-
-%------------------------------------------------
-
-\subsection{Figure}
+\begin{multicols}{2} % Divide text into multiple columns
+  \begin{itemize}
+  \item Esquema General de pruebas a CI's
+    \begin{itemize}
+    \item  Aplicación de vectores de prueba
+    \item La medición en un punto observable
+    \item Comparación con respecto a la referencia
+    \end{itemize}
+  \end{itemize}
+\end{multicols}
 
 \begin{figure}[h]
-\centering\includegraphics[width=0.4\linewidth]{placeholder}
+\centering\includegraphics[width=0.6\linewidth]{esquema}
+\end{figure}
+
+% \begin{enumerate}
+% \item Nulla commodo, erat quis gravida posuere, elit lacus lobortis est, quis porttitor odio mauris at libero
+% \item Nam cursus est eget velit posuere pellentesque
+% \item Vestibulum faucibus velit a augue condimentum quis convallis nulla gravida
+% \end{enumerate}
+
+\clearpage
+
+%------------------------------------------------
+
+\subsection{Modelos de fallas}
+
+\begin{itemize}
+\item \textbf{Fallas tipo Stuck-at}
+  \begin{itemize}
+  \item Un vector puede detectar mas de una falla
+  \item Diferentes vectores detectan la misma falla
+  \end{itemize}
+
+  \begin{figure}[h]
+    \centering\includegraphics[width=0.5\linewidth]{combina01}
+  \end{figure}
+  \clearpage
+
+\item \textbf{Fallas Stuck-Open}
+  \begin{itemize}
+  \item Prueba de doble patrón
+  \item Propagación del error
+  \item Generación automática de vectores de test
+  \end{itemize}
+
+  \begin{figure}[h]
+    \centering\includegraphics[width=0.5\linewidth]{stuckOpen}
+  \end{figure}
+
+\clearpage
+
+\item \textbf{Fallas Stuck-on}
+
+\mybox{0.8\textwidth}{ % Example of encapsulating text in a colored box
+% \begin{theorem}[Modelo]
+    $$V_f = \frac{R_n}{R_n + 2 R_p} V_{DD}$$
+% \end{theorem}
+}
+
+\begin{itemize}
+\item Algún transistor permanece encendido
+\item Selección adecuada de vectores de prueba
+\end{itemize}
+
+\begin{figure}[h]
+  \centering\includegraphics[width=0.5\linewidth]{stuckOn}
+\end{figure}
+
+\clearpage
+
+\item \textbf{Fallas de tipo puente o corto circuito}
+  \begin{itemize}
+  \item Tipo no retroalimentante en un elemento
+  \item Tipo no retroalimentante entre dos elementos
+  \item Retroalimentante
+  \end{itemize}
+\end{itemize}
+
+  \begin{figure}[h]
+    \centering\includegraphics[width=0.5\linewidth]{stuckOpen}
+  \end{figure}
+
+% How to include a theorem in this presentation:
+% \begin{verbatim}
+% \mybox{0.8\textwidth}{
+% \begin{theorem}[Murphy (1949)]
+% Anything that can go wrong, will go wrong.
+% \end{theorem}
+% }
+% \end{verbatim}
+
+\clearpage
+
+%------------------------------------------------
+
+
+\section{Prueba de $i_{DDQ}$}
+
+Descripción de la prueba
+
+\begin{multicols}{2} % Divide text into multiple columns
+  \begin{itemize}
+  \item Pulsos simultáneos en $V_{DD}$ y $V_{SS}$
+  \item Monitoreo de la corriente de $i_{DD}$
+  \item Mismos vectores de pruebas para cualquier falla
+  \item Aplicación de un único vector de prueba
+  \end{itemize}
+\end{multicols}
+
+  \begin{figure}[h]
+    \centering\includegraphics[width=0.5\linewidth]{cut}
+  \end{figure}
+
+\clearpage
+
+%------------------------------------------------
+
+\subsection{Ventajas de la técnica de $i_{DDQ}$}
+
+\begin{itemize}
+\item Monitoreo de corriente
+\item Consumo de corriente mayor
+\item Usado en estructuras CMOS estáticas
+\end{itemize}
+\newpage
+Flujo de corriente:
+\begin{figure}[h]
+\centering\includegraphics[width=0.6\linewidth]{iddq}
+ % \caption{La prueba de $i_{DDQ}$}
 \end{figure}
 
 \clearpage
 
 %------------------------------------------------
 
-\subsection{Theorem}
+% \subsection{Corriente resultante de la prueba $i_{DDQ}$}
 
-The most common definition of \mygreen{Murphy's Law} is as follows.
+% \begin{figure}[h]
+% \centering\includegraphics[width=0.33\linewidth]{g_iddq}
+% % \caption{Corriente resultante de la prueba de $i_{DDQ}$}
+% \end{figure}
 
-\mybox{0.8\textwidth}{ % Example of encapsulating text in a colored box
-\begin{theorem}[Murphy (1949)]
-Anything that can go wrong, will go wrong.
-\end{theorem}
-}
+% \clearpage
 
-\begin{proof}
-A special case of this theorem is proven in the textbook.
-\end{proof}
+%------------------------------------------------
 
-\begin{remark}
-This is a remark.
-\end{remark}
+\subsection{Un único vector de prueba}
 
-\begin{algorithm}
-This is an algorithm.
-\end{algorithm}
+% \begin{table}[ht]
+{\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.4\linewidth]{buffer01}&\includegraphics[width=0.4\linewidth]{iddqprt}\\
+% \includegraphics[scale=1]{graphic3}&\includegraphics[scale=1]{g_iddq}\\
+\end{tabular}}
+% \label{tab:gt}
+% \end{table}
+
+% The most common definition of \mygreen{Murphy's Law} is as follows.
+
+% \mybox{0.8\textwidth}{ % Example of encapsulating text in a colored box
+% \begin{theorem}[Murphy (1949)]
+% Anything that can go wrong, will go wrong.
+% \end{theorem}
+% }
+
+% \begin{proof}
+% A special case of this theorem is proven in the textbook.
+% \end{proof}
+
+% \begin{remark}
+% This is a remark.
+% \end{remark}
+
+% \begin{algorithm}
+% This is an algorithm.
+% \end{algorithm}
 
 \clearpage
 
 %------------------------------------------------
 
-\section{Citations}
+\subsection{Modelo de primer orden}
+\label{sec:model}
 
-An example of the \texttt{\textbackslash cite} command to cite within the presentation:
+\begin{equation}
+I_{DS}=\mu
+C_{ox}\frac{W}{L}(V_{GS}-V_t)V_{DS}-\frac{1}{2}V_{DS}^2 \label{ec:lineal}
+\end{equation}
 
-This statement requires citation \cite{Smith:2012qr}.
+\noindent Así, para $V_{DS}$ pequeños,
+
+\begin{equation}
+R_{transistor} \cong \frac{1}{\mu
+  C_{ox}\frac{W}{L}(V_{GS}-V_t)} \label{ec:resistencia}
+\end{equation}
+
+\noindent la cual es la resistencia del transistor en funci\'on de
+$V_{GS}$. De tal forma que podemos derivar:
+
+\begin{equation}
+V_o=V_{DD}\frac{R_n}{R_n+R_p}+V_{SS}\frac{R_p}{R_n+R_p} \label{ec:vout}
+\end{equation}
 
 \clearpage
 
-%------------------------------------------------
+\subsection{Caso simétrico: Modelo vs. Simulación}
+\label{sec:simetrico}
+
+\begin{table}[ht]
+% \caption{Modelo y simulación.}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.45\linewidth]{modelSimetrico}&\includegraphics[width=0.45\linewidth]{SimSimetrico}\\
+
+% \includegraphics[scale=1]{graphic3}&\includegraphics[scale=1]{graphic4}\\
+\end{tabular}
+\label{tab:simetrico}
+\end{table}
+
+\clearpage
+
+\subsubsection{Potenciales: Modelo y simulación del caso asimétrico (a)}
+\label{sec:asimetricoA}
+
+\begin{table}[ht]
+% \caption{Potenciales: Modelo y simulación del caso asimétrico (a)}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.45\linewidth]{ModeloAsimetricoA}&\includegraphics[width=0.45\linewidth]{SimulacionAsimetricoA}\\
+\end{tabular}
+\label{tab:gt}
+\end{table}
+
+\clearpage
+
+\subsubsection{Potenciales: Modelo y simulación del caso asimétrico (b)}
+\label{sec:asimetricoB}
+
+\begin{table}[ht]
+% \caption{Potenciales: Modelo y simulación del caso asimétrico (a)}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.45\linewidth]{ModeloAsimetricoB}&\includegraphics[width=0.45\linewidth]{SimulacionAsimetricoB}\\
+\end{tabular}
+\label{tab:gt}
+\end{table}
+
+\clearpage
+
+\subsubsection{Análisis de Corriente (a) Cuasi-simétrico (b) Asimétrico}
+\label{sec:iddAnalysis}
+
+\begin{table}[ht]
+% \caption{Potenciales: Modelo y simulación del caso asimétrico (a)}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.35\linewidth]{iddAnalysisCuasiSimetrico}&\includegraphics[width=0.35\linewidth]{iddAnalysisAsimetrico}\\
+\end{tabular}
+\label{tab:gt}
+\end{table}
+
+\clearpage
+
+Tanto la zona estable como la rampa del vector de prueba presentan
+flujo de corriente:
+
+\begin{figure}[h]
+  \centering\includegraphics[width=0.35\linewidth]{iddAnalysisAsimetrico2}
+\end{figure}
+
+\clearpage
+
+\subsection{$i_{DD}$ en un celda básica real}
+\label{sec:adder}
+
+\begin{figure}[h]
+  \centering\includegraphics[width=0.65\linewidth]{fullAdder}
+\end{figure}
+
+\clearpage
+
+Layout del Circuito Sumador completo optimizado:
+
+\begin{figure}[h]
+  \centering\includegraphics[width=0.65\linewidth]{adder8}
+\end{figure}
+
+\clearpage
+
+Ejemplos de resultados:
+% \subsubsection{Ejemplos de resultados}
+% \label{sec:exFaultResult}
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{cc}
+    \includegraphics[width=0.32\linewidth]{rr50-4}&\includegraphics[width=0.32\linewidth]{rr60-6}\\
+  \end{tabular}
+  \label{tab:results}
+\end{table}
+
+\clearpage
+
+\subsubsection{Resumen de fallas analizadas}
+\label{sec:faultResume}
+
+\begin{multicols}{2} % Divide text into multiple columns
+\begin{itemize}
+\item Fallas fáciles de detectar
+  \begin{itemize}
+  \item Fallas entre $V_{DD}$ ($V_{SS}$) y entradas
+  \item Fallas entre nodos internos
+  \item Fallas entre entradas y nodos internos
+  \item La mayoría de las fallas entre $V_{DD}$ ($V_{SS}$) y nodos
+    internos
+  \end{itemize}
+\item Fallas de detección difícil
+  \begin{itemize}
+  \item Fallas entre entradas
+  \item Fallas entre nodos en los cuales existan transistores en
+    paralelo
+  \end{itemize}
+\item Al variar la pendiente, se mejora la facilidad de detección de
+fa\-llas entre alimentaciones y nodos internos
+\item La zona estable del vector de prueba es importante para la detección.
+\end{itemize}
+\end{multicols}
+
+\clearpage
+
+\section{Conclusiones}
+\label{sec:conclusion}
+
+\begin{enumerate}
+\item Se desarrolló un modelo de primer orden para predecir el
+  comportamiento de las celdas CMOS estáticas en la aplicación de la
+  prueba
+\item Se desarrolló una optimización de tiempos de aplicación del
+  vector de prueba para máxima detección
+\item Se desarrolló una técnica que permite encontrar fallas de
+  difícil detección
+\item Según los resultados obtenidos se predice su aplicación en
+  circuitos analógicos y mixtos
+\end{enumerate}
+
+Para mas información vea \cite{Mendoza2000}.
+
+\clearpage
+
+%----
+% \begin{table}[ht]
+% \caption{A table arranging  images}
+% \centering
+% \begin{tabular}{cc}
+% \includegraphics[width=0.45\linewidth]{graphic1}&\includegraphics[width=0.45\linewidth]{graphic2}\\
+
+% \includegraphics[width=0.45\linewidth]{graphic3}&\includegraphics[width=0.45\linewidth]{graphic4}\\
+% \end{tabular}
+% \label{tab:gt}
+% \end{table}
+%----
+
+% \begin{table}[h]
+% \centering
+% \begin{tabular}{l l l}
+% \toprule
+% \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
+% \midrule
+% Treatment 1 & 0.0003262 & 0.562 \\
+% Treatment 2 & 0.0015681 & 0.910 \\
+% Treatment 3 & 0.0009271 & 0.296 \\
+% \bottomrule
+% \end{tabular}
+% \caption{Table caption}
+% \end{table}
+%----
 
 \thispagestyle{empty} % No slide header and footer
+
+% \section{Mas información:}
 
 \bibliographystyle{unsrt}
 \bibliography{references}
 
 \clearpage
+
+%------------------------------------------------
+
+% \thispagestyle{empty} % No slide header and footer
+
+% \bibliographystyle{unsrt}
+% \bibliography{references}
+
+% \clearpage
 
 %------------------------------------------------
 
@@ -426,7 +712,7 @@ This statement requires citation \cite{Smith:2012qr}.
 \begin{flushright}
 \vspace{0.6cm}
 \color{white}\sffamily
-{\bfseries\LARGE Questions?\par} % Request for questions text
+{\bfseries\LARGE ¿Preguntas?\par} % Request for questions text
 \vfill
 \end{flushright}
 

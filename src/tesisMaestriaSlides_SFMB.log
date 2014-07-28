@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.29)  27 JUL 2014 22:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.29)  28 JUL 2014 16:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1176,7 +1176,7 @@ Class scrartcl Warning: Usage of package `titlesec' together
 (scrartcl)              the extended optional argument of the section
 (scrartcl)              commands .
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `titlesec' on input line 161.
+(scrartcl)              package `titlesec' on input line 162.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
@@ -1192,7 +1192,14 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 )
 \c@theorem=\count130
 
-(./tesisMaestriaSlides_SFMB.aux)
+(./tesisMaestriaSlides_SFMB.aux
+
+LaTeX Warning: Label `tab:gt' multiply defined.
+
+
+LaTeX Warning: Label `tab:gt' multiply defined.
+
+)
 \openout1 = `tesisMaestriaSlides_SFMB.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 213.
@@ -1210,8 +1217,7 @@ LaTeX Font Info:    ... okay on input line 213.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 213.
 LaTeX Font Info:    Try loading font information for LY1+ptm on input line 213.
 
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/ly1/ly1ptm.fd
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 213.
@@ -1423,6 +1429,10 @@ text indent by \l@... (toc, 1):  16.42499pt
 number indent by parent (toc, 1):  0.0pt
 text indent calculated (toc, 1): 16.42499pt
 number indent calculated (toc, 1): 0.0pt
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
 number indent by \l@... (toc, 2):  16.42499pt
 text indent by \l@... (toc, 2):  25.18501pt
 number indent by parent (toc, 2):  16.42499pt
@@ -1438,6 +1448,39 @@ text indent by \l@... (toc, 2):  25.18501pt
 number indent by parent (toc, 2):  16.42499pt
 text indent calculated (toc, 2): 25.18501pt
 number indent calculated (toc, 2): 16.42499pt
+number indent by \l@... (toc, 2):  16.42499pt
+text indent by \l@... (toc, 2):  25.18501pt
+number indent by parent (toc, 2):  16.42499pt
+text indent calculated (toc, 2): 25.18501pt
+number indent calculated (toc, 2): 16.42499pt
+number indent by \l@... (toc, 3):  41.61002pt
+text indent by \l@... (toc, 3):  35.03995pt
+number indent by parent (toc, 3):  41.61002pt
+text indent calculated (toc, 3): 35.03995pt
+number indent calculated (toc, 3): 41.61002pt
+number indent by \l@... (toc, 3):  41.61002pt
+text indent by \l@... (toc, 3):  35.03995pt
+number indent by parent (toc, 3):  41.61002pt
+text indent calculated (toc, 3): 35.03995pt
+number indent calculated (toc, 3): 41.61002pt
+number indent by \l@... (toc, 3):  41.61002pt
+text indent by \l@... (toc, 3):  35.03995pt
+number indent by parent (toc, 3):  41.61002pt
+text indent calculated (toc, 3): 35.03995pt
+number indent calculated (toc, 3): 41.61002pt
+[2
+
+]
+number indent by \l@... (toc, 2):  16.42499pt
+text indent by \l@... (toc, 2):  25.18501pt
+number indent by parent (toc, 2):  16.42499pt
+text indent calculated (toc, 2): 25.18501pt
+number indent calculated (toc, 2): 16.42499pt
+number indent by \l@... (toc, 3):  41.61002pt
+text indent by \l@... (toc, 3):  35.03995pt
+number indent by parent (toc, 3):  41.61002pt
+text indent calculated (toc, 3): 35.03995pt
+number indent calculated (toc, 3): 41.61002pt
 number indent by \l@... (toc, 1):  0.0pt
 text indent by \l@... (toc, 1):  16.42499pt
 number indent by parent (toc, 1):  0.0pt
@@ -1447,9 +1490,17 @@ number indent calculated (toc, 1): 0.0pt
 \tf@toc=\write4
 \openout4 = `tesisMaestriaSlides_SFMB.toc'.
 
- [2
-
-]
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+LaTeX Font Info:    Font shape `T1/Cabin-TLF/m/n' will be
+(Font)              scaled to size 5.69998pt on input line 247.
+LaTeX Font Info:    Font shape `T1/fbb-OsF/m/n' will be
+(Font)              scaled to size 6.0pt on input line 247.
+ [3]
 LaTeX Font Info:    Font shape `T1/fbb-OsF/b/n' will be
 (Font)              scaled to size 10.0pt on input line 255.
 LaTeX Font Info:    Font shape `T1/fbb-OsF/m/it' will be
@@ -1460,13 +1511,7 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no w in font nullfont!
-LaTeX Font Info:    Font shape `T1/Cabin-TLF/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 267.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 267.
-LaTeX Font Info:    Font shape `T1/fbb-OsF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 267.
- [3
+ [4
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+fbb-OsF on input line 
@@ -1481,11 +1526,11 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<placeholder.jpg, id=27, 351.3125pt x 193.72375pt>
-File: placeholder.jpg Graphic file (type jpg)
- <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg used on input line 283.
-(pdftex.def)             Requested size: 133.15686pt x 73.42955pt.
+<img/defectos.pdf, id=32, 308.20544pt x 406.92064pt>
+File: img/defectos.pdf Graphic file (type pdf)
+ <use img/defectos.pdf>
+Package pdftex.def Info: img/defectos.pdf used on input line 283.
+(pdftex.def)             Requested size: 76.56494pt x 101.08415pt.
 Missing character: There is no s in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -1493,33 +1538,14 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no w in font nullfont!
 
-[4
+[5
 
- <./placeholder.jpg>]
-Missing character: There is no s in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no w in font nullfont!
- [5
+ <./img/defectos.pdf>] <img/esquema.pdf, id=392, 383.64107pt x 153.1299pt>
+File: img/esquema.pdf Graphic file (type pdf)
 
-]
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 326.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/inconsolata/t1zi4.fd
-File: t1zi4.fd 2013/06/09 T1/zi4 (Inconsolata)
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `zi4' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-Package microtype Info: Character `textendash ' is missing
-(microtype)             in font `T1/zi4/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `textemdash ' is missing
-(microtype)             in font `T1/zi4/m/n/10'.
-(microtype)             Ignoring protrusion settings for this character.
+<use img/esquema.pdf>
+Package pdftex.def Info: img/esquema.pdf used on input line 320.
+(pdftex.def)             Requested size: 199.74039pt x 79.72847pt.
 Missing character: There is no s in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -1528,7 +1554,12 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no w in font nullfont!
  [6
 
-]
+ <./img/esquema.pdf>]
+<img/combina01.pdf, id=406, 322.20375pt x 161.60374pt>
+File: img/combina01.pdf Graphic file (type pdf)
+ <use img/combina01.pdf>
+Package pdftex.def Info: img/combina01.pdf used on input line 343.
+(pdftex.def)             Requested size: 166.44862pt x 83.487pt.
 Missing character: There is no s in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -1538,29 +1569,23 @@ Missing character: There is no w in font nullfont!
 
 [7
 
-]
-LaTeX Font Info:    Font shape `T1/fbb-OsF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 351.
-Missing character: There is no s in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no w in font nullfont!
- [8
+ <./img/combina01.pdf>]
+<img/stuckOpen.pdf, id=420, 157.42253pt x 162.14638pt>
+File: img/stuckOpen.pdf Graphic file (type pdf)
+ <use img/stuckOpen.pdf>
+Package pdftex.def Info: img/stuckOpen.pdf used on input line 355.
+(pdftex.def)             Requested size: 166.44862pt x 171.44136pt.
 
-]
-File: placeholder.jpg Graphic file (type jpg)
- <use placeholder.jpg>
-Package pdftex.def Info: placeholder.jpg used on input line 368.
-(pdftex.def)             Requested size: 133.15686pt x 73.42955pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Missing character: There is no s in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no w in font nullfont!
- [9
+[8
 
 ]
 Missing character: There is no s in font nullfont!
@@ -1569,7 +1594,23 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no w in font nullfont!
- [10
+ [9 <./img/stuckOpen.pdf>]
+<img/stuckOn.pdf, id=1995, 147.90556pt x 134.01588pt>
+File: img/stuckOn.pdf Graphic file (type pdf)
+ <use img/stuckOn.pdf>
+Package pdftex.def Info: img/stuckOn.pdf used on input line 374.
+(pdftex.def)             Requested size: 166.44862pt x 150.83087pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+[10
 
 ]
 Missing character: There is no s in font nullfont!
@@ -1578,44 +1619,328 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no w in font nullfont!
- [11
+ [11 <./img/stuckOn.pdf>]
+File: img/stuckOpen.pdf Graphic file (type pdf)
+ <use img/stuckOpen.pdf>
+Package pdftex.def Info: img/stuckOpen.pdf used on input line 388.
+(pdftex.def)             Requested size: 166.44862pt x 171.44136pt.
 
-] (./tesisMaestriaSlides_SFMB.bbl)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
 [12
 
 ]
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [13]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 405.
+ <img/cut.pdf, id=5059, 291.2444pt x 296.72685pt>
+File: img/cut.pdf Graphic file (type pdf)
+ <use img/cut.pdf>
+Package pdftex.def Info: img/cut.pdf used on input line 419.
+(pdftex.def)             Requested size: 166.44862pt x 169.58429pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+[14
+
+]
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [15 <./img/cut.pdf>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 426.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [16
+
+]
+<img/iddq.pdf, id=5086, 298.9301pt x 210.72647pt>
+File: img/iddq.pdf Graphic file (type pdf)
+ <use img/iddq.pdf>
+Package pdftex.def Info: img/iddq.pdf used on input line 436.
+(pdftex.def)             Requested size: 199.74039pt x 140.80658pt.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [17 <./img/iddq.pdf>] <img/buffer01.pdf, id=6297, 424.23502pt x 292.6913pt>
+File: img/buffer01.pdf Graphic file (type pdf)
+
+<use img/buffer01.pdf>
+Package pdftex.def Info: img/buffer01.pdf used on input line 460.
+(pdftex.def)             Requested size: 133.15686pt x 91.86774pt.
+ <img/iddqprt.pdf, id=6298, 614.295pt x 794.97pt>
+File: img/iddqprt.pdf Graphic file (type pdf)
+
+<use img/iddqprt.pdf>
+Package pdftex.def Info: img/iddqprt.pdf used on input line 460.
+(pdftex.def)             Requested size: 133.15686pt x 172.32233pt.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [18
+
+ <./img/buffer01.pdf> <./img/iddqprt.pdf>]
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [19
+
+]
+<img/modelSimetrico.pdf, id=6343, 238.22069pt x 166.73653pt>
+File: img/modelSimetrico.pdf Graphic file (type pdf)
+
+<use img/modelSimetrico.pdf>
+Package pdftex.def Info: img/modelSimetrico.pdf used on input line 521.
+(pdftex.def)             Requested size: 149.80275pt x 104.8512pt.
+
+<img/SimSimetrico.pdf, id=6344, 234.3968pt x 166.4109pt>
+File: img/SimSimetrico.pdf Graphic file (type pdf)
+
+<use img/SimSimetrico.pdf>
+Package pdftex.def Info: img/SimSimetrico.pdf used on input line 521.
+(pdftex.def)             Requested size: 149.80275pt x 106.35533pt.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [20
+
+ <./img/modelSimetrico.pdf> <./img/SimSimetrico.pdf>] <img/ModeloAsimetricoA.pd
+f, id=9864, 228.51672pt x 167.62927pt>
+File: img/ModeloAsimetricoA.pdf Graphic file (type pdf)
+
+<use img/ModeloAsimetricoA.pdf>
+Package pdftex.def Info: img/ModeloAsimetricoA.pdf used on input line 537.
+(pdftex.def)             Requested size: 149.80275pt x 109.8862pt.
+
+<img/SimulacionAsimetricoA.pdf, id=9865, 226.6601pt x 167.38756pt>
+File: img/SimulacionAsimetricoA.pdf Graphic file (type pdf)
+
+<use img/SimulacionAsimetricoA.pdf>
+Package pdftex.def Info: img/SimulacionAsimetricoA.pdf used on input line 537.
+(pdftex.def)             Requested size: 149.80275pt x 110.62936pt.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [21
+
+ <./img/ModeloAsimetricoA.pdf> <./img/SimulacionAsimetricoA.pdf>]
+<img/ModeloAsimetricoB.pdf, id=12295, 228.59946pt x 163.67819pt>
+File: img/ModeloAsimetricoB.pdf Graphic file (type pdf)
+
+<use img/ModeloAsimetricoB.pdf>
+Package pdftex.def Info: img/ModeloAsimetricoB.pdf used on input line 551.
+(pdftex.def)             Requested size: 149.80275pt x 107.26118pt.
+
+<img/SimulacionAsimetricoB.pdf, id=12296, 227.86058pt x 166.17451pt>
+File: img/SimulacionAsimetricoB.pdf Graphic file (type pdf)
+
+<use img/SimulacionAsimetricoB.pdf>
+Package pdftex.def Info: img/SimulacionAsimetricoB.pdf used on input line 551.
+(pdftex.def)             Requested size: 149.80275pt x 109.247pt.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [22
+
+ <./img/ModeloAsimetricoB.pdf> <./img/SimulacionAsimetricoB.pdf>]
+<img/iddAnalysisCuasiSimetrico.pdf, id=16041, 238.18115pt x 281.32805pt>
+File: img/iddAnalysisCuasiSimetrico.pdf Graphic file (type pdf)
+
+<use img/iddAnalysisCuasiSimetrico.pdf>
+Package pdftex.def Info: img/iddAnalysisCuasiSimetrico.pdf used on input line 5
+65.
+(pdftex.def)             Requested size: 116.51607pt x 137.62013pt.
+
+<img/iddAnalysisAsimetrico.pdf, id=16042, 236.25856pt x 277.22571pt>
+File: img/iddAnalysisAsimetrico.pdf Graphic file (type pdf)
+
+<use img/iddAnalysisAsimetrico.pdf>
+Package pdftex.def Info: img/iddAnalysisAsimetrico.pdf used on input line 565.
+(pdftex.def)             Requested size: 116.51607pt x 136.7174pt.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [23
+
+ <./img/iddAnalysisCuasiSimetrico.pdf> <./img/iddAnalysisAsimetrico.pdf>]
+<img/iddAnalysisAsimetrico2.pdf, id=18006, 231.87387pt x 280.83217pt>
+File: img/iddAnalysisAsimetrico2.pdf Graphic file (type pdf)
+
+<use img/iddAnalysisAsimetrico2.pdf>
+Package pdftex.def Info: img/iddAnalysisAsimetrico2.pdf used on input line 576.
+
+(pdftex.def)             Requested size: 116.51607pt x 141.1185pt.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [24
+
+ <./img/iddAnalysisAsimetrico2.pdf>]
+<img/fullAdder.pdf, id=18787, 438.56927pt x 270.33096pt>
+File: img/fullAdder.pdf Graphic file (type pdf)
+
+<use img/fullAdder.pdf>
+Package pdftex.def Info: img/fullAdder.pdf used on input line 585.
+(pdftex.def)             Requested size: 216.38118pt x 133.37492pt.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [25
+
+ <./img/fullAdder.pdf>]
+<img/adder8.pdf, id=18968, 571.13374pt x 363.3575pt>
+File: img/adder8.pdf Graphic file (type pdf)
+ <use img/adder8.pdf>
+Package pdftex.def Info: img/adder8.pdf used on input line 593.
+(pdftex.def)             Requested size: 216.38118pt x 137.66144pt.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+
+[26
+
+ <./img/adder8.pdf>] <img/rr50-4.pdf, id=18981, 614.295pt x 794.97pt>
+File: img/rr50-4.pdf Graphic file (type pdf)
+
+<use img/rr50-4.pdf>
+Package pdftex.def Info: img/rr50-4.pdf used on input line 605.
+(pdftex.def)             Requested size: 106.52956pt x 137.86029pt.
+ <img/rr60-6.pdf, id=18982, 614.295pt x 794.97pt>
+File: img/rr60-6.pdf Graphic file (type pdf)
+
+<use img/rr60-6.pdf>
+Package pdftex.def Info: img/rr60-6.pdf used on input line 605.
+(pdftex.def)             Requested size: 106.52956pt x 137.86029pt.
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [27
+
+ <./img/rr50-4.pdf> <./img/rr60-6.pdf>]
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [28
+
+]
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+ [29
+
+]
+(./tesisMaestriaSlides_SFMB.bbl) [30
+
+]
 LaTeX Font Info:    Font shape `T1/Cabin-TLF/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 429.
+(Font)              scaled to size 16.41594pt on input line 715.
  
 AED: lastpage setting LastPage
-[13
+[31
 
-] (./tesisMaestriaSlides_SFMB.aux) ) 
+] (./tesisMaestriaSlides_SFMB.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 18300 strings out of 493308
- 346943 string characters out of 6137816
- 463682 words of memory out of 5000000
- 21304 multiletter control sequences out of 15000+600000
- 132347 words of font info for 85 fonts, out of 8000000 for 9000
+ 18532 strings out of 493308
+ 352388 string characters out of 6137816
+ 467693 words of memory out of 5000000
+ 21491 multiletter control sequences out of 15000+600000
+ 134746 words of font info for 117 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 64i,17n,62p,475b,812s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/e
-nc/dvips/inconsolata/i4-t1-5.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/
-dvips/fbb/fbb_bbqv4h.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/fb
-b/fbb_u3ego5.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/fbb/fbb_5y
-uftp.enc}{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/fbb/fbb_4phrex.enc
-}{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cabin/cbn_aojlca.enc}</usr
-/local/texlive/2013/texmf-dist/fonts/type1/impallari/cabin/Cabin-Bold.pfb></usr
-/local/texlive/2013/texmf-dist/fonts/type1/impallari/cabin/Cabin-Regular.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi
-4r.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cmextra/
-cmbsy6.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/fbb/fbb-Bold.
-pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/fbb/fbb-Italic.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/fbb/fbb-Regular.pfb>
-Output written on tesisMaestriaSlides_SFMB.pdf (13 pages, 183181 bytes).
+ 64i,17n,62p,475b,834s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/fbb/fbb_bbqv4h.enc}{/usr/
+local/texlive/2013/texmf-dist/fonts/enc/dvips/fbb/fbb_u3ego5.enc}{/usr/local/te
+xlive/2013/texmf-dist/fonts/enc/dvips/fbb/fbb_5yuftp.enc}{/usr/local/texlive/20
+13/texmf-dist/fonts/enc/dvips/fbb/fbb_4phrex.enc}{/usr/local/texlive/2013/texmf
+-dist/fonts/enc/dvips/cabin/cbn_aojlca.enc}</usr/local/texlive/2013/texmf-dist/
+fonts/type1/impallari/cabin/Cabin-Bold.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/impallari/cabin/Cabin-Regular.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/amsfonts/cmextra/cmbsy6.pfb></usr/local/texlive/2013/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2013/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2013/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2013/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2013/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2013/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/t
+ype1/public/fbb/fbb-Bold.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/pu
+blic/fbb/fbb-Italic.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
+fbb/fbb-Regular.pfb>
+Output written on tesisMaestriaSlides_SFMB.pdf (31 pages, 4258016 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
+ 19079 PDF objects out of 22161 (max. 8388607)
+ 9616 compressed objects within 97 object streams
  0 named destinations out of 1000 (max. 500000)
- 28202 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 29331 words of extra memory for PDF output out of 29859 (max. 10000000)
 
