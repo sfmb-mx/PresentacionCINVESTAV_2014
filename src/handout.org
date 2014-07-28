@@ -81,6 +81,6 @@
 ****** Al variar la pendiente, se mejora la facilidad de detección de fallas entre alimentaciones y nodos internos
 ****** La zona estable del vector de prueba es importante para la detección.
 *** Conclusiones
-**** Se desarrolló un modelo de primer Se desarrolló un modelo de primer orden para predecir el comportamiento de las celdas CMOS estáticas en la aplicación de la prueba
+**** Se desarrolló un modelo de primer orden para predecir el comportamiento de las celdas CMOS estáticas en la aplicación de la prueba
 **** Se desarrolló una optimización de tiempos de aplicación del vector de prueba para máxima detección
 **** Se desarrolló una técnica que permite encontrar fallas de difícil detección

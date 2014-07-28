@@ -37,11 +37,13 @@ parskip=half-, % Paragraphs separated by half a line
 \definecolor{myblue}{RGB}{34,31,217}
 \definecolor{mybrown}{RGB}{194,164,113}
 \definecolor{myred}{RGB}{255,66,56}
+\definecolor{myyellow}{RGB}{236,232,37}
 % Use these colors within the presentation by enclosing text in the commands below
 \newcommand*{\mygreen}[1]{\textcolor{mygreen}{#1}}
 \newcommand*{\myblue}[1]{\textcolor{myblue}{#1}}
 \newcommand*{\mybrown}[1]{\textcolor{mybrown}{#1}}
 \newcommand*{\myred}[1]{\textcolor{myred}{#1}}
+\newcommand*{\myyellow}[1]{\textcolor{myyelow}{#1}}
 %------------------------------------------------
 
 %------------------------------------------------
@@ -71,7 +73,8 @@ foot skip=8.5mm
 \usepackage[lining,tabular]{fbb} % so math uses tabular lining figures
 \usepackage[scaled=.95,type1]{cabin} % sans serif in style of Gill Sans
 \usepackage[varqu,varl]{zi4}% inconsolata typewriter
-\usepackage[T1]{fontenc} % LY1 also works
+% \usepackage[T1]{fontenc} % LY1 also works
+\usepackage[utf8]{inputenc}
 % \usepackage[libertine,bigdelims]{newtxmath}
 \usepackage[cal=boondoxo,bb=boondox,frak=boondox]{mathalfa}
 \useosf % change normal text to use proportional oldstyle figures
@@ -88,8 +91,10 @@ foot skip=8.5mm
 \usepackage{tikz} % Required for colored boxes
 \usepackage{booktabs} % Required for horizontal rules in tables
 \usepackage{multicol} % Required for creating multiple columns in slides
-\usepackage{lastpage} % For printing the total number of pages at the bottom of each slide
-\usepackage[english]{babel} % Document language - required for customizing section titles
+\usepackage{lastpage} % For printing the total number of pages at the
+                      % bottom of each slide
+\usepackage[english]{babel} % Document language - required for
+                            % customizing section titles
 \usepackage{microtype} % Better typography
 \usepackage{tocstyle} % Required for customizing the table of contents
 %------------------------------------------------
@@ -126,7 +131,9 @@ foot skip=8.5mm
 \node[below of=mybar,yshift=3.3mm,rectangle,shade,inner sep=0pt,minimum width=128mm,minimum height =1.5mm,top color=black!50,bottom color=white]{}; % Shadow under the colored bar
 shadow
 \end{tikzpicture}
-\color{white}\runninghead} % Header text defined by the \runninghead command below and colored white for contrast
+\color{white}\runninghead} % Header text defined by the \runninghead
+                           % command below and colored white for
+                           % contrast
 
 %------------------------------------------------
 
@@ -193,11 +200,13 @@ shadow
 %	PRESENTATION INFORMATION
 %----------------------------------------------------------------------------------------
 
-\newcommand*{\mytitle}{Presentation Title} % Title
-\newcommand*{\runninghead}{Running Head} % Running head displayed on almost all slides
-\newcommand*{\myauthor}{John Smith} % Presenters name(s)
-\newcommand*{\mydate}{\today} % Presentation date
-\newcommand*{\myuni}{University of California --- Department of Statistics} % University or department
+\newcommand*{\mytitle}{Trabajo de Maestría (Electrónica)} % Title
+\newcommand*{\runninghead}{Maestría en Ciencias con Especialidad en
+  Electrónica} % Running head displayed on
+                                % almost all slides
+\newcommand*{\myauthor}{Sergio-Feliciano Mendoza-Barrera} % Presenters name(s)
+\newcommand*{\mydate}{Julio 29, 2014} % Presentation date
+\newcommand*{\myuni}{Global Labs Mexico} % University or department
 
 %----------------------------------------------------------------------------------------
 
@@ -241,21 +250,54 @@ shadow
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
 
-\section{Displaying Text}
+\section{Datos de la tesis}
 
-Este es mi primer texto!
+\textbf{``Pruebas de CI's aplicando un pulso en las Fuentes de Polarización''}
+
+   Por:
+
+   \textbf{Sergio-Feliciano Mendoza-Barrera}
+
+   Supervisada por:
+
+   \textit{Dr. Víctor Champac-Vilela}
+
+   \textit{Dr. Mónico Linares-Aranda}
 
 \clearpage
 
 %------------------------------------------------
 
-\subsection{Paragraphs of Text and Formatting}
-
-\textit{Sed iaculis} dapibus gravida. Morbi sed tortor erat, nec interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed tellus ipsum.
+\subsection{Estado del Arte (2000): Defectos en CI's}
 
 \begin{multicols}{2} % Divide text into multiple columns
-\mygreen{Sed diam enim, sagittis nec} condimentum sit amet, ullamcorper sit amet libero. \mybrown{Aliquam vel dui orci}, a porta odio. \myred{Nullam id suscipit} ipsum. \myblue{Aenean lobortis} commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero, quis commodo erat ullamcorper id.
+\begin{itemize}
+  \item Corto-circuitos entre\\conductores
+  \item Roturas en los conductores
+  \item Roturas en los contactos o vías
+  \item Uniones P-N defectuosas
+\end{itemize}
 \end{multicols}
+
+\begin{figure}[h]
+\centering\includegraphics[width=0.4\linewidth]{placeholder}
+\end{figure}
+
+
+% \textit{Sed iaculis} dapibus gravida. Morbi sed tortor erat, nec
+% interdum arcu. Sed id lorem lectus. Quisque viverra augue id sem
+% ornare non aliquam nibh tristique. Aenean in ligula nisl. Nulla sed
+% tellus ipsum.
+
+% \begin{multicols}{2} % Divide text into multiple columns
+%   \mygreen{Sed diam enim, sagittis nec} condimentum sit amet,
+%   ullamcorper sit amet libero. \mybrown{Aliquam vel dui orci}, a porta
+%   odio. \myred{Nullam id suscipit} ipsum. \myblue{Aenean lobortis}
+%   commodo sem, ut commodo leo gravida vitae. Pellentesque vehicula ante
+%   iaculis arcu pretium rutrum eget sit amet purus. Integer ornare nulla
+%   quis neque ultrices lobortis. Vestibulum ultrices tincidunt libero,
+%   quis commodo erat ullamcorper id.
+% \end{multicols}
 
 \clearpage
 
@@ -369,7 +411,7 @@ This statement requires citation \cite{Smith:2012qr}.
 \thispagestyle{empty} % No slide header and footer
 
 \bibliographystyle{unsrt}
-\bibliography{sample}
+\bibliography{references}
 
 \clearpage
 
